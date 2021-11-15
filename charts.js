@@ -117,7 +117,14 @@ function buildCharts(sample) {
       title: "Top 10 Bacteria Cultures Found",
       margin: { pad: 15 },
       plot_bgcolor:"black",
-      paper_bgcolor:"#FFF3"    
+      paper_bgcolor:"#FFF3",
+      yaxis:{
+        automargin: true
+      },
+      font: {
+        size: 18,
+        color: '#FFFFFF'
+      }    
     };
     // 1.10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", barData, barLayout)
@@ -141,7 +148,16 @@ function buildCharts(sample) {
       title: 'Bacteria Cultures Per Sample',
       showlegend: false,
       xaxis: { title: "OTU ID"},
-      hovermode: 'closest'
+      hovermode: 'closest',
+      plot_bgcolor:"black",
+      paper_bgcolor:"#FFF3",
+      yaxis:{
+        automargin: true
+      },
+      font: {
+        size: 18,
+        color: '#FFFFFF'
+      }    
     };
 
     // 2.3. Use Plotly to plot the data with the layout.
@@ -171,7 +187,16 @@ function buildCharts(sample) {
     
     // 3.5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      margin: { t: 10, b: 10 }
+      margin: { t: 10, b: 10 },
+      plot_bgcolor:"black",
+      paper_bgcolor:"#FFF3",
+      yaxis:{
+        automargin: true
+      },
+      font: {
+        size: 18,
+        color: '#FFFFFF'
+      }    
     };
 
     // 3.6. Use Plotly to plot the gauge data and layout.
